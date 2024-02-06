@@ -21,17 +21,18 @@ namespace Crud.Controllers
         }
 
         // GET: Json
-        public ActionResult Details()
+        public JsonResult Details()
         {
             List<Revistas> lst;
-            using (ExamenEntities db= new ExamenEntities())
+            using (ExamenEntities db = new ExamenEntities())
             {
                 lst = (from d in db.Revistas
-                           select d).ToList();
+                       select d).ToList();
             }
-            
-            return View(lst);
+
+            return Json(lst, JsonRequestBehavior.AllowGet);
         }
+
 
         // GET: Revistas/Create
         public ActionResult Create()

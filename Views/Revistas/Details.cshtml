@@ -6,7 +6,28 @@
 
 <h2>Details</h2>
 
-@foreach (var oElement in Model) 
-{ 
-     <b>@oElement.Titulo</b>
-}
+<input onclick="Obten();" type="button" value="Obtener" />
+<div id="MiDiv">
+
+</div>
+
+<script>
+    function Obten() {
+
+        fetch("@Url.Content("~/Json/Details")")
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (miJson) {
+                console.log(miJson)
+                let miResultado = "";
+
+                for (let i = 0; i < miJson.length; i++) {
+                    miResultado += "<p>" + miJson[i].Nombre+"</p>"
+                }
+
+                document.getElementById("MiDiv").innerHTML = miJson;
+            })
+
+    }
+</script>
