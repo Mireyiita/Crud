@@ -51,6 +51,8 @@ C:\Users\star-\source\repos\Crud\bin\roslyn\vbc.rsp
 C:\Users\star-\source\repos\Crud\bin\roslyn\VBCSCompiler.exe
 C:\Users\star-\source\repos\Crud\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\star-\source\repos\Crud\bin\Antlr3.Runtime.dll
+C:\Users\star-\source\repos\Crud\bin\EntityFramework.dll
+C:\Users\star-\source\repos\Crud\bin\EntityFramework.SqlServer.dll
 C:\Users\star-\source\repos\Crud\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\star-\source\repos\Crud\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\star-\source\repos\Crud\bin\Newtonsoft.Json.dll
@@ -62,6 +64,8 @@ C:\Users\star-\source\repos\Crud\bin\System.Web.WebPages.Deployment.dll
 C:\Users\star-\source\repos\Crud\bin\System.Web.WebPages.dll
 C:\Users\star-\source\repos\Crud\bin\System.Web.WebPages.Razor.dll
 C:\Users\star-\source\repos\Crud\bin\WebGrease.dll
+C:\Users\star-\source\repos\Crud\bin\EntityFramework.xml
+C:\Users\star-\source\repos\Crud\bin\EntityFramework.SqlServer.xml
 C:\Users\star-\source\repos\Crud\bin\System.Web.Helpers.xml
 C:\Users\star-\source\repos\Crud\bin\System.Web.Mvc.xml
 C:\Users\star-\source\repos\Crud\bin\System.Web.Optimization.xml
