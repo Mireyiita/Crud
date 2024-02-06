@@ -20,19 +20,17 @@ namespace Crud.Controllers
             return View(db.Revistas.ToList());
         }
 
-        // GET: Revistas/Details/5
-        public ActionResult Details(int? id)
+        // GET: Json
+        public ActionResult Details()
         {
-            if (id == null)
+            List<Revistas> lst;
+            using (ExamenEntities db= new ExamenEntities())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                lst = (from d in db.Revistas
+                           select d).ToList();
             }
-            Revistas revistas = db.Revistas.Find(id);
-            if (revistas == null)
-            {
-                return HttpNotFound();
-            }
-            return View(revistas);
+            
+            return View(lst);
         }
 
         // GET: Revistas/Create
